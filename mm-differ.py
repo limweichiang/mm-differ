@@ -14,7 +14,6 @@ See the License for the specific language governing permissions and
 limitations under the License.
 '''
 
-import paramiko
 import argparse
 import getpass
 import time
@@ -23,6 +22,13 @@ import sys
 import string
 import re
 import difflib
+
+try:
+    import paramiko
+except:
+    print("Error importing Paramiko module, please install it with \"pip install paramiko\". Quitting...")
+    exit(-1)
+
 
 CMD_CONFIG_NOPAGING = "no paging\n"
 CMD_CONFIG_HIERARCHY = "show configuration node-hierarchy | include \"/\" | exclude \"Default-node is\"\n"
