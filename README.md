@@ -4,8 +4,8 @@
 mm-differ is built to validate that the Aruba OS 8 Mobility Master configuration hierarchies and configurations within the hierachies are identical between and Active and Standby instance.
 
 ## Requirements
-Python 3 (Developed with Python 3.6.3; also tested on Python 3.7.4)
-Paramiko Module (Developed with Paramiko 2.6.0)
+* Python 3 (Developed with Python 3.6.3; also tested on Python 3.7.4)
+* Paramiko Module (Developed with Paramiko 2.6.0)
 
 ## Usage
 ```
